@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'http://localhost:1337',
+        apiURL: '190.189.8.214',
         contentTypes: ['obra'],
         loginData: {
           identifier: '',
