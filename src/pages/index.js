@@ -1,31 +1,17 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/Layout/Layout';
-import Obra from '../components/Obra/Obra';
+import Thumbnail from '../components/Thumbnail/Thumbnail';
+import HeroBox from '../components/HeroBox/HeroBox';
 
 
-export default (props) => {
-    const data = useStaticQuery(graphql`
-    {
-        allStrapiObra{
-            nodes{
-                titulo,
-                slug
-            }
-        }
-    }
-    `)
-    const obras = data.allStrapiObra.nodes.map(edge => {
-        return <Obra key={edge.slug} 
-        title={edge.titulo} 
-        link={`/obra/${edge.slug}`} />
-    });
+export default () => {
+    
     return (
         <Layout>
-            <h1>Obras</h1>
-            <div>
-                {obras}
-            </div>
+            <HeroBox/>
+            
         </Layout>
     )
 }

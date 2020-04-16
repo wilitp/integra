@@ -1,10 +1,30 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import classes from './Header.module.scss';
-const Header = () => {
+
+const Header = (props) => {
+
+
+    const data = useStaticQuery(graphql`
+    {
+        logo: file(name: { eq: "logo_integra" } ){
+        childImageSharp{
+            fixed(height: 40) {
+                ...GatsbyImageSharpFixed
+                }
+            }
+        }
+    }
+    `)
+
+
+    const logo = <Img fixed={data.logo.childImageSharp.fixed} />
+
+
     return (
         <div className={classes.Header}>
-            <h1>Estudio Integra</h1>
+            <div className={classes.logo}>{logo}</div>
             <nav>
                 <ul>
                     <li><Link to="/">Inicio</Link></li>
@@ -15,5 +35,6 @@ const Header = () => {
         </div>
     )
 }
+
 
 export default Header

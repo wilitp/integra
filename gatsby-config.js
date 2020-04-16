@@ -5,11 +5,20 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/static/assets`
+      }
+    }
+    ,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: '190.189.8.214:1337',
+        apiURL: 'http://localhost:1337',
         contentTypes: ['obra'],
         loginData: {
           identifier: '',
