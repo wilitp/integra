@@ -1,9 +1,10 @@
 .Header {
+  z-index: 1;
   box-sizing: border-box;
   padding-left: 10%;
   padding-right: 10%;
   background-color: #303535;
-  height: 60px;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,6 +29,8 @@
         margin: 0;
         padding: 0;
         a {
+          font-size: 13px;
+          text-transform: uppercase;
           text-decoration: none;
           color: rgb(180, 180, 180);
           &[aria-current="page"],
@@ -46,10 +49,11 @@
   align-items: center;
 }
 
-// .attached {
-//   background-color: transparent;
-//   text-transform: uppercase;
-//   a {
-//     color: black;
-//   }
-// }
+.attached {
+  height: 75px;
+  background-color: transparent;
+  text-transform: uppercase;
+  a {
+    color: black;
+  }
+}

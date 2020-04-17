@@ -10,7 +10,7 @@ const Header = (props) => {
     {
         logo: file(name: { eq: "logo_integra" } ){
         childImageSharp{
-            fixed(height: 40) {
+            fixed(height: 50) {
                 ...GatsbyImageSharpFixed
                 }
             }
@@ -23,7 +23,7 @@ const Header = (props) => {
 
 
     return (
-        <div className={classes.Header}>
+        <div className={classes.Header + " " + classes.attached}>
             <div className={classes.logo}>{logo}</div>
             <nav>
                 <ul>
