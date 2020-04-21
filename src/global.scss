@@ -1,5 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 * {
-  font-family: "Lato", sans-serif
+  font-family: "Lato", sans-serif;
+}
+
+.greyContainer {
+  background-color: #eee;
+  width: 100%;
+  margin: 0;
+  padding: 50px 15%;
+  // padding-left: 15%;
+  // padding-right: 15%;
+  box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 50px 15%;
+    // padding-left: 15%;
+    // padding-right: 15%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1500px) {
+  .greyContainer,
+  .container {
+    padding: 50px 10%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .greyContainer,
+  .container {
+    padding: 50px 5%;
+  }
 }

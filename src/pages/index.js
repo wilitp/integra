@@ -1,18 +1,16 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
 import Layout from '../components/Layout/Layout';
-import Thumbnail from '../components/Thumbnail/Thumbnail';
 import HeroBox from '../components/HeroBox/HeroBox';
-import Button from '../components/Button/Button';
-
+import Servicios from '../components/Servicios/Servicios';
+import Proyectos from '../components/Proyectos/Proyectos';
 
 export default () => {
-    
+
     return (
         <Layout>
-            <HeroBox/>
-            
+            <HeroBox />
+            <Servicios/>
+            <Proyectos/>
         </Layout>
     )
 }

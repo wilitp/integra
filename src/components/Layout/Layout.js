@@ -9,7 +9,7 @@ const Layout = (props) => {
 
     return (
         <React.Fragment>
-            <Header />
+            <Header notIndex={props.notIndex}/>
             {spacer}
             <div className={classes.container}>
                 {props.children}

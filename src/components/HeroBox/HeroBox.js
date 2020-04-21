@@ -10,8 +10,8 @@ const HeroBox = (props) => {
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Veritatis dolor ullam rerum harum ea pariatur perferendis officia,
           minus suscipit voluptatum!</span>
-          <Button type={"successOutline"}>Ver Proyectos</Button>
-          <Button type={"secondaryOutline"}>Contacto</Button>
+          <Button link={'/proyectos/'} type={"successOutline"}>Ver Proyectos</Button>
+          <Button link={'/contacto'} type={"secondaryOutline"}>Contacto</Button>
       </main>
 
     </div>

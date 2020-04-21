@@ -1,8 +1,8 @@
 .Header {
   z-index: 1;
   box-sizing: border-box;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   background-color: #303535;
   height: 70px;
   position: fixed;
@@ -12,9 +12,10 @@
   margin: 0;
   display: flex;
   justify-content: flex-end;
+  transition: all 0.3s ease-out;
   nav {
     display: flex;
-    width: 30%;
+    width: 40%;
     margin: 0;
     ul {
       padding: 0;
@@ -50,10 +51,23 @@
 }
 
 .attached {
-  height: 75px;
+  height: 90px;
   background-color: transparent;
-  text-transform: uppercase;
   a {
     color: black;
+  }
+}
+
+@media (max-width: 1500px) {
+  .Header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .Header {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-const contacto = () => {
+const servicios = () => {
   return (
     <Layout notIndex>
-      <h1>Contacto</h1>
-    </Layout> 
+      <h1>Servicios</h1>
+    </Layout>
   )
 }
 
-export default contacto
+export default servicios
