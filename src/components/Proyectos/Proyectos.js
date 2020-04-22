@@ -9,23 +9,26 @@ export default () => {
     {
       obra1: contentfulObra(slug: {eq: "obra1"}) {
         fotoPrincipal {
-          fluid(maxWidth: 600) {
-            ...GatsbyContentfulFluid
+          fluid {
+            ...GatsbyContentfulFluid,
+            sizes
           }
         }
       }
       obra2: contentfulObra(slug: {eq: "obra2"}) {
         fotoPrincipal {
-          fluid(maxWidth: 600) {
-            ...GatsbyContentfulFluid
+          fluid(sizes: "[ 200, 340, 520, 890 ]") {
+            ...GatsbyContentfulFluid,
+            sizes
 
           }
         }
       }
       obra3: contentfulObra(slug: {eq: "obra3"}) {
         fotoPrincipal {
-          fluid(maxWidth: 600) {
-            ...GatsbyContentfulFluid
+          fluid(sizes: "[ 200, 340, 520, 890 ]") {
+            ...GatsbyContentfulFluid,
+            sizes
           }
         }
       }

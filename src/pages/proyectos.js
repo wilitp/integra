@@ -7,17 +7,19 @@ import { useStaticQuery, graphql } from 'gatsby';
 export default () => {
 
   const data = useStaticQuery(graphql`
-     {
-        allContentfulObra{
-          nodes{
-            fotoPrincipal{
-              fluid(maxWidth: 600) {
-                ...GatsbyContentfulFluid
-              }
+    {
+      allContentfulObra{
+        nodes{
+          fotoPrincipal{
+            fluid{
+              ...GatsbyContentfulFluid,
+              sizes
             }
           }
         }
       }
+    }
+    
   `)
 
   const imagenes = data.allContentfulObra.nodes.map(node => {

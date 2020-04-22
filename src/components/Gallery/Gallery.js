@@ -19,7 +19,7 @@ export default (props) => {
 
 
   const imagenesFormateadas = props.images.map(img => {
-    return <div className={classes.image}><Img fluid={img}/></div>
+    return <Img style={{width: "100%"}} fluid={img}/>
   })
 
 
