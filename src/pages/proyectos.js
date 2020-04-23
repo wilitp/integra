@@ -38,6 +38,7 @@ export default (props) => {
   return (
     <Layout notIndex>
       <div className="container">
+        <h1>Proyectos</h1>
         {/* <MasonryLayout columns={3} gap={4}>{imagenesFormateadas}</MasonryLayout> */}
         <Masonry
           breakpointCols={breakpointColumnsObj}
