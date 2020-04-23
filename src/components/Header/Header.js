@@ -18,7 +18,7 @@ const Header = (props) => {
     `)
 
 
-    const logo = <Link><Img draggable={false} fixed={data.logo.childImageSharp.fixed} /></Link>
+    const logo = <Link to="/"><Img draggable={false} fixed={data.logo.childImageSharp.fixed} /></Link>
 
 
     const [attached, setAttached] = useState(true);

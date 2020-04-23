@@ -3,45 +3,28 @@ import classes from './Proyectos.module.scss';
 import { useStaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-css';
 import Img from 'gatsby-image';
+import Button from '../Button/Button';
 export default (props) => {
 
   const data = useStaticQuery(graphql`
     {
-      obra1: contentfulObra(slug: {eq: "vivienda-en-terrazas-de-la-estanzuela"}) {
-        slug
-        fotoPrincipal {
-          fluid {
-            ...GatsbyContentfulFluid,
-            sizes
-          }
-        }
-      }
-      obra2: contentfulObra(slug: {eq: "vivienda-en-santina-norte"}) {
-        slug
-        fotoPrincipal {
-          fluid{
-            ...GatsbyContentfulFluid,
-            sizes
-
-          }
-        }
-      }
-      obra3: contentfulObra(slug: {eq: "vivienda-en-cerro-de-las-rosas"}) {
-        slug
-        fotoPrincipal {
-          fluid(sizes: "[ 200, 340, 520, 890 ]") {
-            ...GatsbyContentfulFluid,
-            sizes
+      obras: allContentfulObra(limit: 4){
+        nodes{
+          slug,
+          fotoPrincipal{
+            fluid {
+              ...GatsbyContentfulFluid
+            }
           }
         }
       }
     }
+    
   `)
 
 
-  const obras = [data.obra1, data.obra2, data.obra3]
-  const imagenesFormateadas = obras.map(obra => {
-    return <div className="image-overlay" onClick={() => props.navigate(`/proyecto/${obra.slug}`)}><Img style={{ width: "100%" }} fluid={obra.fotoPrincipal.fluid} /></div>
+  const imagenesFormateadas = data.obras.nodes.map(obra => {
+    return <div key={obra.slug} className="image-overlay" onClick={() => props.navigate(`/proyecto/${obra.slug}`)}><Img style={{ width: "100%" }} fluid={obra.fotoPrincipal.fluid} /></div>
   })
 
   const breakpointColumnsObj = {
@@ -58,6 +41,9 @@ export default (props) => {
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
         >{imagenesFormateadas}</Masonry>
+        <div style={{marginTop: "50px"}}>
+          <Button centered>Ver todos los proyectos</Button>
+        </div>
       </div>
     </div>
   )

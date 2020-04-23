@@ -27,7 +27,7 @@ export default (props) => {
     return node
   })
   const imagenesFormateadas = obras.map(obra => {
-    return <div className="image-overlay" onClick={() => props.navigate(`/proyecto/${obra.slug}`)}><Img style={{ width: "100%" }} fluid={obra.fotoPrincipal.fluid} />
+    return <div key={obra.slug} className="image-overlay" onClick={() => props.navigate(`/proyecto/${obra.slug}`)}><Img style={{ width: "100%" }} fluid={obra.fotoPrincipal.fluid} />
     </div>
   })
   const breakpointColumnsObj = {

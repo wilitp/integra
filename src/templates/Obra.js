@@ -9,7 +9,9 @@ export const query = graphql`
     query ($slug: String!) {
         contentfulObra(slug: {eq: $slug}) {
             titulo
+            slug
             fotos{
+                id
                 fluid{
                     ...GatsbyContentfulFluid
                 }
@@ -19,7 +21,7 @@ export const query = graphql`
 `;
 
 export default (props) => {
-    const imagenesFormateadas = props.data.contentfulObra.fotos.map(img => <Img fluid={img.fluid} />)
+    const imagenesFormateadas = props.data.contentfulObra.fotos.map(img=> <Img key={img.id} fluid={img.fluid} />)
     const breakpointColumnsObj = {
         default: 3,
         900: 2,
