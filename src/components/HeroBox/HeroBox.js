@@ -4,9 +4,10 @@ import { Link } from 'gatsby';
 import Button from '../Button/Button';
 const HeroBox = (props) => {
 
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(1920);
 
   useEffect(() => {
+    setWidth(window.innerWidth)
     window.addEventListener("resize", () => setWidth(window.innerWidth));
 
     return () => {

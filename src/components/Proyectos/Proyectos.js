@@ -42,7 +42,7 @@ export default (props) => {
           columnClassName="my-masonry-grid_column"
         >{imagenesFormateadas}</Masonry>
         <div style={{marginTop: "50px"}}>
-          <Button centered>Ver todos los proyectos</Button>
+          <Button link={"/proyectos/"} centered>Ver todos los proyectos</Button>
         </div>
       </div>
     </div>
