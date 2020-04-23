@@ -18,17 +18,16 @@ export const query = graphql`
 `;
 
 export default (props) => {
-    const titulo = props.data.contentfulObra.titulo;
-    const img = props.data.contentfulObra.fotoPrincipal.fixed;
+    // const titulo = props.data.contentfulObra.titulo;
+    // const img = props.data.contentfulObra.fotoPrincipal.fixed;
 
-    console.log(img)
     return (
         <Layout notIndex>
-            <div className={classes.Obra}></div>
+            {/* <div className={classes.Obra}></div>
             <h1>{titulo}</h1>
             <div>
                 <Img fixed={img}/>
-            </div>
+            </div> */}
         </Layout>
 
     )

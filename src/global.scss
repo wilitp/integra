@@ -3,6 +3,10 @@
 * {
   font-family: "Lato", sans-serif;
 }
+// body{
+//   width: 100vw;
+//   overflow-x: hidden;
+// }
 
 .greyContainer {
   background-color: #eee;
@@ -36,4 +40,34 @@
   .container {
     padding: 50px 5%;
   }
+}
+
+
+
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -5px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 5px; /* gutter size */
+  background-clip: padding-box;
+}
+ 
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 5px;
+}
+
+
+
+
+.image-overlay:hover{
+  background-color: #333;
+  opacity: 30%;
+  cursor: pointer;
 }

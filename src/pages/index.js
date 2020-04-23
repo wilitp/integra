@@ -4,13 +4,13 @@ import HeroBox from '../components/HeroBox/HeroBox';
 import Servicios from '../components/Servicios/Servicios';
 import Proyectos from '../components/Proyectos/Proyectos';
 
-export default () => {
+export default (props) => {
 
     return (
         <Layout>
             <HeroBox />
             <Servicios/>
-            <Proyectos/>
+            <Proyectos navigate={props.navigate}/>
         </Layout>
     )
 }
