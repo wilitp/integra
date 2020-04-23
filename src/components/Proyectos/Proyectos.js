@@ -7,7 +7,7 @@ export default (props) => {
 
   const data = useStaticQuery(graphql`
     {
-      obra1: contentfulObra(slug: {eq: "obra1"}) {
+      obra1: contentfulObra(slug: {eq: "vivienda-en-terrazas-de-la-estanzuela"}) {
         slug
         fotoPrincipal {
           fluid {
@@ -16,17 +16,17 @@ export default (props) => {
           }
         }
       }
-      obra2: contentfulObra(slug: {eq: "obra2"}) {
+      obra2: contentfulObra(slug: {eq: "vivienda-en-santina-norte"}) {
         slug
         fotoPrincipal {
-          fluid(sizes: "[ 200, 340, 520, 890 ]") {
+          fluid{
             ...GatsbyContentfulFluid,
             sizes
 
           }
         }
       }
-      obra3: contentfulObra(slug: {eq: "obra3"}) {
+      obra3: contentfulObra(slug: {eq: "vivienda-en-cerro-de-las-rosas"}) {
         slug
         fotoPrincipal {
           fluid(sizes: "[ 200, 340, 520, 890 ]") {
