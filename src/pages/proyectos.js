@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 import Img from 'gatsby-image';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-css';
 
 export default (props) => {
@@ -20,7 +20,6 @@ export default (props) => {
         }
       }
     }
-    
   `)
     console.log(props)
   const obras = data.allContentfulObra.nodes.map(node => {

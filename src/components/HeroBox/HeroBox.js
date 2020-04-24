@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react';
 import classes from './HeroBox.module.scss';
 import { Link } from 'gatsby';
 import Button from '../Button/Button';
+import useWidth from '../../hooks/useWidth';
+
+
+
+
+
 const HeroBox = (props) => {
 
-  const [width, setWidth] = useState(1920);
+  const width = useWidth()
 
-  useEffect(() => {
-    setWidth(window.innerWidth)
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-
-    return () => {
-      window.removeEventListener("resize", () => setWidth(window.innerWidth))
-    }
-  })
   return (
     <div className={classes.HeroBox}>
       <main className={width < 620 ? classes.mobile : null}>
@@ -29,5 +27,7 @@ const HeroBox = (props) => {
     </div>
   )
 }
+
+
 
 export default HeroBox
