@@ -17,7 +17,7 @@ const Header = (props) => {
         }
         logoMini: file(name: {eq: "logo_integra"}){
             childImageSharp{
-                fixed(height: 30){
+                fixed(height: 40){
                     ...GatsbyImageSharpFixed
                 }
             }
