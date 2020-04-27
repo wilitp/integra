@@ -12,16 +12,16 @@ const Footer = () => {
     <div className={classes.Footer}>
       <div className={classes.icons}>
         <div className={classes.icon}>
-          <FontAwesomeIcon icon={faPhone} />
+          <FontAwesomeIcon size="lg" icon={faPhone} />
         </div>
         <a target="blank" href="mailto: arqtobar@gmail.com" className={classes.icon}>
-          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon size="lg" icon={faEnvelope} />
         </a>
         <div className={classes.icon} style={{ padding: "5px 10px" }}>
-          <FontAwesomeIcon icon={faFacebookSquare} />
+          <FontAwesomeIcon size="lg" icon={faFacebookSquare} />
         </div>
         <a target="blank" href="http://www.google.com" className={classes.icon} style={{ padding: "4px 6px" }}>
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon size="lg" icon={faInstagram} />
         </a >
       </div>
       <div className={classes.sections}>
