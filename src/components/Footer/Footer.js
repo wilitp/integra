@@ -38,6 +38,9 @@ const Footer = () => {
           <Link>Contacto</Link>
           <Link>Servicios</Link>
         </section>
+        <div style={{color: "#aaa", fontSize: "12px", textAlign: "left"}}>
+          2020 Integra ©
+        </div>
         {/* <section className={classes.section}>
           Teléfono y mail
         </section> */}
