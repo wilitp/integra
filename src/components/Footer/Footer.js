@@ -1,24 +1,48 @@
 import React from 'react'
 import classes from './Footer.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'gatsby';
 
 
 const Footer = () => {
   return (
 
-
     <div className={classes.Footer}>
-      <div>
-        Iconos
+      <div className={classes.icons}>
+        <div className={classes.icon}>
+          <FontAwesomeIcon icon={faPhone} />
+        </div>
+        <a target="blank" href="mailto: arqtobar@gmail.com" className={classes.icon}>
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <div className={classes.icon} style={{ padding: "5px 10px" }}>
+          <FontAwesomeIcon icon={faFacebookSquare} />
+        </div>
+        <a target="blank" href="http://www.google.com" className={classes.icon} style={{ padding: "4px 6px" }}>
+          <FontAwesomeIcon icon={faInstagram} />
+        </a >
       </div>
-      <div className={classes.column}>
-        Integraxd
+      <div className={classes.sections}>
+
+        <section className={classes.section}>
+          <strong>Contacto</strong>
+          <p>arqtobar@gmail.com</p>
+          <p>54 9 3516264127</p>
+        </section>
+        <section className={classes.section}>
+          <strong>Menu</strong>
+          <Link>Inicio</Link>
+          <Link>Proyectos</Link>
+          <Link>Contacto</Link>
+          <Link>Servicios</Link>
+        </section>
+        {/* <section className={classes.section}>
+          Teléfono y mail
+        </section> */}
       </div>
-      <div className={classes.column}>
-        redondelitos
-      </div>
-      <div className={classes.column}>
-        Teléfono y mail
-      </div>
+
     </div>
 
   )

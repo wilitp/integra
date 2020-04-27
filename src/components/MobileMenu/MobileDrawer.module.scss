@@ -1,5 +1,4 @@
 .MobileDrawer {
-  transition: display .3s;
   position: fixed;
   display: flex;
   align-items: center;
@@ -14,6 +13,7 @@
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 1.2rem;
     &[aria-current="page"],
     &:hover {
       font-weight: bold;

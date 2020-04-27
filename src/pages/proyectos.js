@@ -30,14 +30,14 @@ export default (props) => {
     </div>
   })
   const breakpointColumnsObj = {
-    default: 3,
-    900: 2,
+    default: 2,
+    // 900: 2,
     500: 1
   };
   return (
     <Layout notIndex>
       <div className="container">
-        <h1>Proyectos</h1>
+        <h1 style={{marginTop: "0"}}>Proyectos</h1>
         {/* <MasonryLayout columns={3} gap={4}>{imagenesFormateadas}</MasonryLayout> */}
         <Masonry
           breakpointCols={breakpointColumnsObj}
