@@ -11,9 +11,9 @@ const Footer = () => {
 
     <div className={classes.Footer}>
       <div className={classes.icons}>
-        <div className={classes.icon}>
+        <a href="tel:54 9 3516164127" className={classes.icon}>
           <FontAwesomeIcon size="lg" icon={faPhone} />
-        </div>
+        </a>
         <a target="blank" href="mailto: arqtobar@gmail.com" className={classes.icon}>
           <FontAwesomeIcon size="lg" icon={faEnvelope} />
         </a>
@@ -29,7 +29,7 @@ const Footer = () => {
         <section className={classes.section}>
           <strong>Contacto</strong>
           <p>arqtobar@gmail.com</p>
-          <p>54 9 3516264127</p>
+          <p>54 9 3516164127</p>
         </section>
         <section className={classes.section}>
           <strong>Menu</strong>
