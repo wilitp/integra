@@ -18,7 +18,7 @@ const Layout = (props) => {
     }
 
     return (
-        <React.Fragment>
+        <div style={{background: "#333"}}>
             {drawer ? <MobileDrawer onHide={hideDrawerHandler} /> : null}
             <Header notIndex={props.notIndex} close={drawer} onToggle={drawer ? hideDrawerHandler : showDrawerHandler}/>
             {spacer}
@@ -26,7 +26,7 @@ const Layout = (props) => {
                 {props.children}
             </div>
             <Footer />
-        </React.Fragment>
+        </div>
     );
 };
 
