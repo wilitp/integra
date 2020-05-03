@@ -1,51 +1,59 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 import { graphql } from 'gatsby';
+import Carousel from '../components/Carousel/Carousel';
 import Img from 'gatsby-image';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"
 import classes from './Obra.module.scss';
-import Masonry from 'react-masonry-css';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export const query = graphql`
     query ($slug: String!) {
-        contentfulObra(slug: {eq: $slug}) {
+        obra: contentfulObra(slug: {eq: $slug}) {
             titulo
+            cuerpo{
+              json
+            }
             slug
-            
+            plano{
+              title
+              fluid{
+                ...GatsbyContentfulFluid
+              }
+            }
             fotos{
-                fluid( maxWidth: 3080, quality: 80){
+                fluid( maxWidth: 3080, quality: 70){
+                  aspectRatio
                     ...GatsbyContentfulFluid
                 }
+
             }
         }
     }
 `;
 
 export default (props) => {
-    const imagenesFormateadas = props.data.contentfulObra.fotos.map(img => <div style={{height: "50vh", width: "100%"}}><Img key={img.id} fluid={img.fluid} /></div>)
-    const breakpointColumnsObj = {
-        default: 1,
-        500: 1
-    }
-    return (
-        <Layout notIndex>
-            <div className="container">
-                {/* <h1>{props.data.contentfulObra.titulo}</h1>
-                <Masonry
-                    breakpointCols={breakpointColumnsObj}
-                    className="my-masonry-grid"
-                    columnClassName="my-masonry-grid_column"
-                >{imagenesFormateadas}
-                </Masonry> */}
-                <Carousel dynamicHeight infiniteLoop>
-                    {imagenesFormateadas}
-                </Carousel>
+  const imagenesFormateadas = props.data.obra.fotos.map(img => img.fluid)
+
+  return (
+    <Layout notIndex>
+      <React.Fragment>
+        <div className="container">
+          <Carousel imagenes={imagenesFormateadas} />
+          <div>
+            <div className={classes.description}>
+              {documentToReactComponents(props.data.obra.cuerpo.json)}
             </div>
+            {props.data.obra.plano ? <div className={classes.plano}>
+              <Img fluid={props.data.obra.plano.fluid} />
+              <p>{props.data.obra.plano.title}</p>
+            </div> : null}
+          </div>
 
-        </Layout>
+        </div>
+      </React.Fragment>
+    </Layout>
 
-    )
+  )
 }
 
 

@@ -24,7 +24,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allContentfulObra.edges.forEach(edge => {
     createPage({
       component: obraComponentPath,
-      path: `/proyecto/${edge.node.slug}`,
+      path: `/proyectos/${edge.node.slug}`,
       context: {
         slug: edge.node.slug
       }

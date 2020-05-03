@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 import MobileDrawer from '../MobileMenu/MobileMenu';
 const Layout = (props) => {
 
-    const spacer = props.notIndex ? <div style={{ height: "60px", width: "100%" }}></div> : null;
+    const spacer = props.notIndex ? <div style={{ height: "70px", width: "100%" }}></div> : null;
     const [drawer, setDrawer] = useState(false);
 
 

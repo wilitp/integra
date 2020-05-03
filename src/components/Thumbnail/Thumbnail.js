@@ -1,13 +1,15 @@
 import React from 'react'
 import classes from './Thumbnail.module.scss';
-import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 const Obra = (props) => {
     return (
-        <div className={classes.Obra}>
-            <Link to={props.link}>
-                <h4>{props.title}</h4>
-                {props.image}
-            </Link>
+        <div className={classes.Thumbnail} >
+            <div className={classes.overlay} onClick={() => props.clicked()}>
+                <strong>
+                    {props.title}
+                </strong>
+            </div>
+            <Img fluid={props.image} />
         </div>
     )
 }

@@ -55,10 +55,8 @@ const Header = (props) => {
             setAttached(false)
         }
         return () => {
-            if (!props.notIndex) {
-                window.removeEventListener('scroll', toggleAttached)
+            window.removeEventListener('scroll', toggleAttached)
 
-            }
         }
     }, [])
 
