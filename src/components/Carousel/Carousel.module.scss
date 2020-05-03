@@ -9,36 +9,53 @@
   // background: #eee;
   display: flex;
   align-items: center;
-  .previousButton,.nextButton{
-    outline: none;
-    border: none;
-    font-size: 50px;
-    color: white;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    height: 100%;
-    width: 10%;
-    transform: translateY(-50%);
-    background: black;
-    opacity: .1;
-    &:hover{
-      opacity: .5;
-    }
-  }
-  
-  .previousButton{
-    border-radius: 10px 0 0 10px;
-    left: 0
-  }
-  .nextButton{
-    border-radius: 0 10px 10px 0;
-    right: 0
-  }
-  .slide{
-    transition: all .5s ease;
+
+  .slide {
+    transition: all 0.5s ease;
     height: 100%;
     overflow: hidden;
     min-width: 100%;
+  }
+}
+
+.previousButton,
+.nextButton {
+  outline: none;
+  border: none;
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 10%;
+  transform: translateY(-50%);
+  background: black;
+  opacity: 0.1;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.previousButton {
+  border-radius: 10px 0 0 10px;
+  left: 0;
+}
+.nextButton {
+  border-radius: 0 10px 10px 0;
+  right: 0;
+}
+
+@media (max-width: 750px) {
+  .previousButton,
+  .nextButton {
+    height: 50%;
+    transform: initial;
+  }
+  .nextButton{
+    top: 0
+  }
+  .previousButton{
+    left: initial;
+    right: 0;
   }
 }

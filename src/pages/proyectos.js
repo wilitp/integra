@@ -22,7 +22,6 @@ export default (props) => {
       }
     }
   `)
-  console.log(props)
   const obras = data.allContentfulObra.nodes.map(node => {
     return node
   })

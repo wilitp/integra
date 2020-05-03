@@ -25,7 +25,7 @@ export default (props) => {
 
 
   const imagenesFormateadas = data.obras.nodes.map(obra => {
-    return <Thumbnail title={obra.titulo} image={obra.fotoPrincipal.fluid} clicked={() => props.navigate(`/proyectos/${obra.slug}`)}/>
+    return <Thumbnail title={obra.titulo} key={obra.slug} image={obra.fotoPrincipal.fluid} clicked={() => props.navigate(`/proyectos/${obra.slug}`)}/>
   })
 
   const breakpointColumnsObj = {

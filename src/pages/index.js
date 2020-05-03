@@ -9,9 +9,9 @@ export default (props) => {
 
     return (
         <Layout>
-            <HeroBox />
-            <Servicios/>
-            <Proyectos navigate={props.navigate}/>
+            <HeroBox key="hero"/>
+            <Servicios key="Servicios"/>
+            <Proyectos key="proyectos" navigate={props.navigate}/>
         </Layout>
     )
 }

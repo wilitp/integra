@@ -11,10 +11,10 @@ const Footer = () => {
 
     <div className={classes.Footer}>
       <div className={classes.icons}>
-        <a href="tel:54 9 3516164127" className={classes.icon}>
+        <a href="tel:54 9 3516164127" className={classes.icon} >
           <FontAwesomeIcon size="lg" icon={faPhone} />
         </a>
-        <a target="blank" href="mailto: arqtobar@gmail.com" className={classes.icon}>
+        <a target="blank" href="mailto: arqtobar@gmail.com" className={classes.icon} >
           <FontAwesomeIcon size="lg" icon={faEnvelope} />
         </a>
         <div className={classes.icon} style={{ padding: "5px 10px" }}>
@@ -38,7 +38,7 @@ const Footer = () => {
           <Link to="/contacto/">Contacto</Link>
           <Link to="/servicios/">Servicios</Link>
         </section>
-        <div style={{color: "#aaa", fontSize: "12px", textAlign: "left"}}>
+        <div style={{ color: "#aaa", fontSize: "12px", textAlign: "left" }}>
           2020 Integra ©
         </div>
         {/* <section className={classes.section}>
