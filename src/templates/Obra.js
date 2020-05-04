@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Carousel from '../components/Carousel/Carousel';
 import Img from 'gatsby-image';
 import classes from './Obra.module.scss';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const query = graphql`
     query ($slug: String!) {
@@ -38,6 +40,16 @@ export default (props) => {
     <Layout notIndex>
       <React.Fragment>
         <div className="container">
+          <Link to="/proyectos/"
+            style={{
+              width: "fit-content",
+              textDecoration: "none",
+              color: "black",
+              display: "block",
+              marginBottom: "20px"
+            }}>
+            <Icon icon={faChevronLeft} /> Volver
+          </Link>
           <Carousel imagenes={imagenesFormateadas} />
           <div>
             <div className={classes.description}>
