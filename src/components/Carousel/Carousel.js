@@ -8,7 +8,7 @@ import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 const Carousel = (props) => {
   const width = useWidth()
   let photosHeight = 70;
-  if(width < 1366 && width > 900){
+  if(width < 1360 && width > 900){
     photosHeight = 30
   }
   else if (width < 900 && width > 500) {
