@@ -4,6 +4,29 @@
   font-family: "Montserrat", "Lato", sans-serif;
 }
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+
+::-webkit-scrollbar-button {
+  height: 1px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+  
+}
 
 .greyContainer {
   background-color: #eee;
@@ -57,5 +80,3 @@
   background: grey;
   margin-bottom: 5px;
 }
-
- 

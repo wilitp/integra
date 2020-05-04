@@ -11,7 +11,7 @@ const Carousel = (props) => {
   if(width < 1366 && width > 900){
     photosHeight = 30
   }
-  if (width < 900 && width > 500) {
+  else if (width < 900 && width > 500) {
     photosHeight = 30
   }
   else if (width < 500) {
@@ -33,7 +33,7 @@ const Carousel = (props) => {
   }
 
   const next = () => {
-    x > (slides.length - 1) * -100 ? setX(x - 100) : setX(0)
+    x != (slides.length - 1) * -100 ? setX(x - 100) : setX(0)
   }
 
   return (
