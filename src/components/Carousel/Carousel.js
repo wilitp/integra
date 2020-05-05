@@ -15,7 +15,7 @@ const Carousel = (props) => {
     photosHeight = 30
   }
   else if (width < 500) {
-    photosHeight = 22
+    photosHeight = 25
   }
   const [x, setX] = useState(0);
   const slides = props.imagenes.map(img => {

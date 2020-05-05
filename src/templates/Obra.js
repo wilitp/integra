@@ -34,7 +34,7 @@ export const query = graphql`
 `;
 
 export default (props) => {
-  const imagenesFormateadas = props.data.obra.fotos.map(img => img.fluid)
+  const imagenes = props.data.obra.fotos.map(img => img.fluid)
 
   return (
     <Layout notIndex>
@@ -50,7 +50,7 @@ export default (props) => {
             }}>
             <Icon icon={faChevronLeft} /> Volver
           </Link>
-          <Carousel imagenes={imagenesFormateadas} />
+          <Carousel imagenes={imagenes} />
           <div>
             <div className={classes.description}>
               {documentToReactComponents(props.data.obra.cuerpo.json)}
