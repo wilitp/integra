@@ -1,11 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-const servicios = () => {
+const estudio = () => {
   return (
     <Layout notIndex>
-      <h1>Servicios</h1>
+      <div className="container">
+        <h1>Estudio</h1>
+
+      </div>
     </Layout>
   )
 }
 
-export default servicios
+export default estudio

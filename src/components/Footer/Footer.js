@@ -36,7 +36,7 @@ const Footer = () => {
           <Link to="/">Inicio</Link>
           <Link to="/proyectos/" >Proyectos</Link>
           <Link to="/contacto/">Contacto</Link>
-          <Link to="/servicios/">Servicios</Link>
+          <Link to="/estudio/">Estudio</Link>
         </section>
         <div style={{ color: "#aaa", fontSize: "12px", textAlign: "left" }}>
           2020 Integra ©
