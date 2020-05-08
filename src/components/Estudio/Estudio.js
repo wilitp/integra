@@ -32,12 +32,12 @@ const Estudio = () => {
             </div>
 
             <div className={classes.icons}>
-              <div>
+              <a href="https://www.linkedin.com/in/viviana-tobar-416848124/" target="blank">
                 <Icon icon={faLinkedinIn} />
-              </div>
-              <div>
+              </a>
+              <a href="https://www.facebook.com/viviana.tobar.35" target="blank">
                 <Icon icon={faFacebookF}/>
-              </div>
+              </a>
             </div>
           </div>
         </div>

@@ -26,9 +26,11 @@
     .icons{
       border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
       padding: 15px;
-      div{
+      a{
+        color: black;
         display: inline;
-        margin: 10px
+        margin: 10px;
+        cursor: pointer
       }
     }
   }
