@@ -66,7 +66,7 @@ export default () => {
         </div>
 
       </div>
-      <Button centered link={"/sercicios/"}>Conocer más</Button>
+      <Button centered link={"/servicios/"}>Conocer más</Button>
       
 
     </div>
