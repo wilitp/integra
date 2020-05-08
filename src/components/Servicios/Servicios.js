@@ -50,23 +50,23 @@ export default () => {
           <Servicio
             icon={images.blanco}
             title={"Diseño"}
-            description={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, illo!"}
+            description={"Centrado en la calidad de vida de sus usuarios."}
           />
           <Servicio
             icon={images.verde}
             title={"Obra"}
-            description={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, illo!"}
+            description={"Optimiza sistemas de la edificación reduciendo el impacto ambiental."}
           />
           <Servicio
             icon={images.naranja}
             title={"Gestión"}
-            description={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, illo!"}
+            description={"Racionaliza los recursos para lograr reducción de costos."}
           />
 
         </div>
 
       </div>
-      <Button centered link={"/estudio/"}>Conocer más</Button>
+      <Button centered link={"/sercicios/"}>Conocer más</Button>
       
 
     </div>

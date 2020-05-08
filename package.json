@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Pagína del estudio Integra de arquitectura",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Guillermo de Ipola",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

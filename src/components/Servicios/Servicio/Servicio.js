@@ -7,9 +7,10 @@ const Servicio = (props) => {
       <div className={classes.icon}>
         {props.icon}
       </div>
+      <h3>{props.title}</h3>
       <div className={classes.description}>
-        <h3>{props.title}</h3>
         <p>{props.description}</p>
+
       </div>
 
     </div>

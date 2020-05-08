@@ -4,6 +4,7 @@ import HeroBox from '../components/HeroBox/HeroBox';
 import Servicios from '../components/Servicios/Servicios';
 import Proyectos from '../components/Proyectos/Proyectos';
 import Footer from '../components/Footer/Footer';
+import Estudio from '../components/Estudio/Estudio';
 
 export default (props) => {
 
@@ -11,6 +12,7 @@ export default (props) => {
         <Layout>
             <HeroBox key="hero"/>
             <Servicios key="Servicios"/>
+            <Estudio/>
             <Proyectos key="proyectos" navigate={props.navigate}/>
         </Layout>
     )

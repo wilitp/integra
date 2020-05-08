@@ -73,7 +73,7 @@ const Header = (props) => {
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to="/proyectos/">Proyectos</Link></li>
                         <li><Link to="/contacto/">Contacto</Link></li>
-                        <li><Link to="/estudio/">Estudio</Link></li>
+                        <li><Link to="/servicios/">Servicios</Link></li>
 
                     </ul>
                 </nav> : null}

@@ -16,9 +16,7 @@ const HeroBox = (props) => {
     <div className={classes.HeroBox}>
       <main className={width < 620 ? classes.mobile : null}>
         <h1>Estudio Integra</h1>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Veritatis dolor ullam rerum harum ea pariatur perferendis officia,
-        minus suscipit voluptatum!
+        <span>Un estudio de arquitectura dinámico, flexible e integral. Centrado en las necesidades de cada cliente.
           </span>
         {width > 620 ? <Button link={'/proyectos/'} type={"successOutline"}>Ver Proyectos</Button> : null}
         <Button centered={width < 620} link={'/contacto'} type={"secondaryOutline"}>Contacto</Button>
