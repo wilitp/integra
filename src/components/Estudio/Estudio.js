@@ -38,7 +38,7 @@ const Estudio = () => {
               <a href="https://www.facebook.com/viviana.tobar.35" target="blank">
                 <Icon icon={faFacebookF} size="lg" />
               </a>
-              <a href="https://www.instagram.com/viviliztobar/?hl=es">
+              <a href="https://www.instagram.com/viviliztobar/?hl=es" target="blank">
                 <Icon icon={faInstagram} size="lg" />
               </a>
             </div>

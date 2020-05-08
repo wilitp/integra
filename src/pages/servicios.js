@@ -15,7 +15,7 @@ const estudio = () => {
               <h2>Diseño</h2>
               <p>
                 DISEÑAMOS considerando la dimensión estética, funcional y tecnológica en
-                cada proyecto, conjugando cada aspecto con originalidad y racionalidad.
+                cada proyecto, conjugando cada aspecto con <strong>originalidad y racionalidad</strong>.
           
               </p>
               <p>
