@@ -27,7 +27,7 @@ const Estudio = () => {
             <Img fluid={data.foto.childImageSharp.fluid} />
 
             <div className={classes.description}>
-              <h4>Viviada Tobar</h4>
+              <h4>Viviana Tobar</h4>
               <p>Arquitecta</p>
             </div>
 
