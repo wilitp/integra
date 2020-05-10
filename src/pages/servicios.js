@@ -4,12 +4,8 @@ import classes from '../static/styles/servicios.module.scss';
 
 const estudio = () => {
   return (
-    <Layout notIndex>
-      <Helmet>
-        <link rel="icon" href={favicon} />
-        <title>Servicios - Estudio Integra</title>
-        <link rel="canonical" href="http://integraestudio.com.ar/servicios/" />
-      </Helmet>
+    <Layout notIndex url="http://integraestudio.com.ar" title="Servicios - Integra Estudio">
+      
       <div className="container">
         <div className={classes.Servicios}>
           <h1>Servicios</h1>

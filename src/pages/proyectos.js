@@ -40,12 +40,8 @@ export default (props) => {
     500: 1
   };
   return (
-    <Layout notIndex>
-      <Helmet> 
-        <link rel="icon" href={favicon} />
-        <title>Proyectos - Estudio Integra</title>
-        <link rel="canonical" href="http://integraestudio.com.ar/proyectos/" />
-      </Helmet>
+    <Layout notIndex title="Proyectos - Estudio Integra" url="http://integraestudio.com.ar/proyectos/">
+      
       <div className="container">
         <h1 style={{ marginTop: "0" }}>Proyectos</h1>
         <Masonry

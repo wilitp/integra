@@ -9,12 +9,8 @@ import Estudio from '../components/Estudio/Estudio';
 export default (props) => {
 
     return (
-        <Layout>
-            <Helmet>
-                <link rel="icon" href={favicon} />
-                <title>Estudio Integra</title>
-                <link rel="canonical" href="http://integraestudio.com.ar" />
-            </Helmet>
+        <Layout url="http://integraestudio.com.ar" title="Estudio Integra">
+            
             <HeroBox key="hero" />
             <Servicios key="Servicios" />
             <Estudio />

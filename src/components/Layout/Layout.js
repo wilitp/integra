@@ -21,15 +21,22 @@ const Layout = (props) => {
 
     return (
         <>
-        <div style={{background: "#333"}}>
-            {drawer ? <MobileDrawer onHide={hideDrawerHandler} /> : null}
-            <Header notIndex={props.notIndex} close={drawer} onToggle={drawer ? hideDrawerHandler : showDrawerHandler}/>
-            {spacer}
-            <div className={classes.container}>
-                {props.children}
+            <Helmet>
+                <link rel="icon" href={favicon} />
+                <title>{props.title}</title>
+                <link rel="canonical" href={props.url} />
+                <meta name="description" content="Integra es un estudio de arquitectura de Córdoba, Argentina.
+                 Centrado en brindar una solución completa a cualquier tipo de proyecto de pequeña o mediada escala."/>
+            </Helmet>
+            <div style={{ background: "#333" }}>
+                {drawer ? <MobileDrawer onHide={hideDrawerHandler} /> : null}
+                <Header notIndex={props.notIndex} close={drawer} onToggle={drawer ? hideDrawerHandler : showDrawerHandler} />
+                {spacer}
+                <div className={classes.container}>
+                    {props.children}
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
         </>
     );
 };
