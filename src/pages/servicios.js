@@ -5,6 +5,11 @@ import classes from '../static/styles/servicios.module.scss';
 const estudio = () => {
   return (
     <Layout notIndex>
+      <Helmet>
+        <link rel="icon" href={favicon} />
+        <title>Servicios - Estudio Integra</title>
+        <link rel="canonical" href="http://integraestudio.com.ar/servicios/" />
+      </Helmet>
       <div className="container">
         <div className={classes.Servicios}>
           <h1>Servicios</h1>
@@ -16,11 +21,11 @@ const estudio = () => {
               <p>
                 DISEÑAMOS considerando la dimensión estética, funcional y tecnológica en
                 cada proyecto, conjugando cada aspecto con <strong>originalidad y racionalidad</strong>.
-          
+
               </p>
               <p>
                 Nuestra meta es lograr una <strong>mejor calidad de vida</strong> de nuestros clientes a
-                través de la arquitectura, brindando una solución exclusiva a cada uno de ellos.     
+                través de la arquitectura, brindando una solución exclusiva a cada uno de ellos.
               </p>
             </div>
 

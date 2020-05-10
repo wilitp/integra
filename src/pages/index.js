@@ -10,10 +10,15 @@ export default (props) => {
 
     return (
         <Layout>
-            <HeroBox key="hero"/>
-            <Servicios key="Servicios"/>
-            <Estudio/>
-            <Proyectos key="proyectos" navigate={props.navigate}/>
+            <Helmet>
+                <link rel="icon" href={favicon} />
+                <title>Estudio Integra</title>
+                <link rel="canonical" href="http://integraestudio.com.ar" />
+            </Helmet>
+            <HeroBox key="hero" />
+            <Servicios key="Servicios" />
+            <Estudio />
+            <Proyectos key="proyectos" navigate={props.navigate} />
         </Layout>
     )
 }

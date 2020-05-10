@@ -21,11 +21,6 @@ const Layout = (props) => {
 
     return (
         <>
-        <Helmet>
-            <link rel="icon" href={favicon}/>
-            <title>Estudio Integra</title>
-            <link rel="canonical" href="http://integraestudio.com.ar"/>
-        </Helmet>
         <div style={{background: "#333"}}>
             {drawer ? <MobileDrawer onHide={hideDrawerHandler} /> : null}
             <Header notIndex={props.notIndex} close={drawer} onToggle={drawer ? hideDrawerHandler : showDrawerHandler}/>
