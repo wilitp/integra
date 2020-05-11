@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 import classes from '../static/styles/servicios.module.scss';
-
+import Aviso from '../components/Aviso/Aviso';
 const estudio = () => {
   return (
     <Layout notIndex url="http://integraestudio.com.ar" title="Servicios - Integra Estudio">
@@ -13,6 +13,7 @@ const estudio = () => {
 
           <section className={classes.Section}>
             <div>
+              <Aviso>Durante esta cuarentena, ¡Proyecto a mínimo costo!</Aviso>
               <h2>Diseño</h2>
               <p>
                 DISEÑAMOS considerando la dimensión estética, funcional y tecnológica en

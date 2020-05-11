@@ -20,7 +20,7 @@ const Footer = () => {
         <a target="blank" href="https://www.facebook.com/integra.cordoba" className={classes.icon} style={{ padding: "5px 10px" }}>
           <FontAwesomeIcon size="lg" icon={faFacebookSquare} />
         </a>
-        <a target="blank" href="http://www.google.com" className={classes.icon} style={{ padding: "4px 6px" }}>
+        <a target="blank" href="https://www.instagram.com/estudio_integra/?hl=es" className={classes.icon} style={{ padding: "4px 6px" }}>
           <FontAwesomeIcon size="lg" icon={faInstagram} />
         </a >
       </div>

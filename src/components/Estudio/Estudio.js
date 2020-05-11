@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Aviso from '../Aviso/Aviso';
 
 const Estudio = () => {
   const data = useStaticQuery(graphql`
@@ -21,6 +22,8 @@ const Estudio = () => {
   return (
     <div className={classes.Estudio}>
       <div className="container">
+
+        <Aviso>Durante esta cuarentena, ¡Proyecto a mínimo costo!</Aviso>
         <h1>Estudio</h1>
         <div className={classes.Cards}>
           <div className={classes.card}>
