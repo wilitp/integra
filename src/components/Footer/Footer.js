@@ -17,9 +17,9 @@ const Footer = () => {
         <a target="blank" href="mailto: arqtobar@gmail.com" className={classes.icon} >
           <FontAwesomeIcon size="lg" icon={faEnvelope} />
         </a>
-        <div className={classes.icon} style={{ padding: "5px 10px" }}>
+        <a target="blank" href="https://www.facebook.com/integra.cordoba" className={classes.icon} style={{ padding: "5px 10px" }}>
           <FontAwesomeIcon size="lg" icon={faFacebookSquare} />
-        </div>
+        </a>
         <a target="blank" href="http://www.google.com" className={classes.icon} style={{ padding: "4px 6px" }}>
           <FontAwesomeIcon size="lg" icon={faInstagram} />
         </a >
