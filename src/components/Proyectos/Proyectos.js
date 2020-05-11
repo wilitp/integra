@@ -48,7 +48,7 @@ export default (props) => {
     
   `)
 
-  const obras = [data.obra1, data.obra2, data.obra3, data.obra4];
+  const obras = [data.obra1, data.obra4, data.obra3, data.obra2];
 
   const imagenesFormateadas = obras.map(obra => {
     return <Thumbnail title={obra.titulo} key={obra.slug} image={obra.fotoPrincipal.fluid} clicked={() => props.navigate(`/proyectos/${obra.slug}`)} />
