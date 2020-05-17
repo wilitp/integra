@@ -20,7 +20,7 @@
       margin: 5px 0;
       display: block;
     }
-    
+
     input {
       // border-radius: 5px;
       outline: none;
@@ -29,8 +29,21 @@
       padding: 3px;
       &:focus {
         border-bottom: 1px solid rgba($color: #1ddb82, $alpha: 1);
-        transition: all ease-out .6s;
+        transition: all ease-out 0.6s;
       }
+    }
+    button {
+      padding: 9px 13px;
+      cursor: pointer;
+      background: #1bb46d;
+      border: 1px solid #1bb46d;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      margin-right: 30px;
+      // margin: 0 30px;
     }
   }
 }

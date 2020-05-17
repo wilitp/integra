@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/Button';
 import classes from './ContactForm.module.scss';
 
 const ContactForm = () => {
@@ -20,7 +19,7 @@ const ContactForm = () => {
           <input name="telefono" type="text" />
         </div>
         <div >
-          <Button centered type="submit">Enviar</Button>
+          <button centered type="submit">Enviar</button>
         </div>
       </form>
     </div>

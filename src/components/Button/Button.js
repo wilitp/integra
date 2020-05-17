@@ -17,7 +17,7 @@ const Button = (props) => {
     
   }
   return (
-    <Link to={props.link} type={props.type} className={buttonClasses.join(" ")} style={props.centered ? {margin: "0 auto"} : null}>{props.children}</Link>
+    <Link to={props.link}  className={buttonClasses.join(" ")} style={props.centered ? {margin: "0 auto"} : null}>{props.children}</Link>
   )
 }
 
