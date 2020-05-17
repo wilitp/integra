@@ -5,8 +5,8 @@ import classes from './ContactForm.module.scss';
 const ContactForm = () => {
   return (
     <div className={classes.ContactForm}>
-      <form action="/" method="POST" name="contact" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
+      <form action="/" method="POST" name="Contact" data-netlify="true">
+        <input type="hidden" name="form-name" value="Contact" />
         <div>
           <label>Nombre</label>
           <input name="nombre" type="text" />
