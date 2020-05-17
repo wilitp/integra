@@ -33,7 +33,7 @@ const Carousel = (props) => {
   }
 
   const next = () => {
-    x != (slides.length - 1) * -100 ? setX(x - 100) : setX(0)
+    x !== (slides.length - 1) * -100 ? setX(x - 100) : setX(0)
   }
 
   return (

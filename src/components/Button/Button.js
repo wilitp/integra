@@ -14,6 +14,8 @@ const Button = (props) => {
       buttonClasses.push(classes.secondaryOutline)
       break;
     }
+    default:
+      
     
   }
   return (
