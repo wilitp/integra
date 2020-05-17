@@ -17,7 +17,7 @@ const ContactForm = () => {
         </div>
         <div>
           <label>Teléfono (opcional)</label>
-          <input type="text" />
+          <input name="telefono" type="text" />
         </div>
         <div >
           <Button centered type="submit">Enviar</Button>
