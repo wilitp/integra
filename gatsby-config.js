@@ -17,8 +17,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/static/assets`
       }
-    }
-    ,
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',

@@ -7,7 +7,24 @@
   margin: auto;
   padding: 15px;
   box-sizing: border-box;
-  div {
+  * {
+    font-family: "Lato", sans-serif;
+    margin: 5px 0;
+    display: block;
+  }
+
+  input {
+    // border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba($color: #353535, $alpha: 0.5);
+    padding: 3px;
+    &:focus {
+      border-bottom: 1px solid rgba($color: #1ddb82, $alpha: 1);
+      transition: all ease-out 0.6s;
+    }
+  }
+  .field {
     text-align: left;
     margin: auto;
     padding: 10px;
@@ -15,23 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    * {
-      font-family: "Lato", sans-serif;
-      margin: 5px 0;
-      display: block;
-    }
 
-    input {
-      // border-radius: 5px;
-      outline: none;
-      border: none;
-      border-bottom: 1px solid rgba($color: #353535, $alpha: 0.5);
-      padding: 3px;
-      &:focus {
-        border-bottom: 1px solid rgba($color: #1ddb82, $alpha: 1);
-        transition: all ease-out 0.6s;
-      }
-    }
     button {
       padding: 9px 13px;
       cursor: pointer;
@@ -42,8 +43,21 @@
       font-size: 16px;
       border: 1px solid transparent;
       text-decoration: none;
-      margin-right: 30px;
       // margin: 0 30px;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .inlineFields {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 83%;
+    padding: 10px;
+    .field {
+      margin: 0;
+      width: 40%;
     }
   }
 }

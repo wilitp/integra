@@ -6,20 +6,31 @@ const ContactForm = () => {
     <div className={classes.ContactForm}>
       <form action="/" method="POST" name="Contact" data-netlify="true">
         <input type="hidden" name="form-name" value="Contact" />
-        <div>
+
+        <div className={classes.field}>
           <label>Nombre</label>
           <input name="nombre" type="text" />
         </div>
-        <div>
-          <label>Email</label>
-          <input name="email" type="email" />
+
+        <div className={classes.inlineFields}>
+          <div className={classes.field}>
+            <label>Email</label>
+            <input name="email" type="email" />
+          </div>
+          <div className={classes.field}>
+            <label>Teléfono (opcional)</label>
+            <input name="telefono" type="text" />
+          </div>
         </div>
-        <div>
-          <label>Teléfono (opcional)</label>
-          <input name="telefono" type="text" />
+
+
+
+        <div className={classes.field}>
+          <label>Asunto</label>
+          <input name="asunto" type="text" />
         </div>
-        <div >
-          <button centered type="submit">Enviar</button>
+        <div className={classes.field}>
+          <button type="submit">Enviar</button>
         </div>
       </form>
     </div>
