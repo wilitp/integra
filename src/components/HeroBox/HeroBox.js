@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './HeroBox.module.scss';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../Button/Button';
-import useWidth from '../../hooks/useWidth';
 import { useStaticQuery, graphql } from 'gatsby';
 
 
@@ -21,16 +20,21 @@ const HeroBox = (props) => {
      }
   `)
 
-  const width = useWidth()
 
   return (
     <BackgroundImage className={classes.HeroBox} fluid={data.file.childImageSharp.fluid} tag="div">
-      <main className={width < 620 ? classes.mobile : null}>
+      <main >
         <h1>Estudio Integra</h1>
-        <span>Un estudio de arquitectura dinámico, flexible e integral. Centrado en las necesidades de cada cliente.
-          </span>
-        {width > 620 ? <Button link={'/proyectos/'} type={"successOutline"}>Ver Proyectos</Button> : null}
-        <Button centered={width < 620} link={'/contacto'} type={"secondaryOutline"}>Contacto</Button>
+        <span>
+          Un estudio de arquitectura dinámico, flexible e integral. Centrado en las necesidades de cada cliente.
+        </span>
+        <div className={classes.buttons}>
+          <Button link={'/proyectos/'} type={"successOutline"}>Ver Proyectos</Button>
+          <Button link={'/contacto'} type={"secondaryOutline"}>Contacto</Button>
+        </div>
+        <div className={classes.button}>
+          <Button centered link={'/contacto'} type={"secondaryOutline"}>Contacto</Button>
+        </div>
       </main>
 
     </BackgroundImage>

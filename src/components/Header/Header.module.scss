@@ -54,7 +54,7 @@
   padding: 0;
   height: 55px;
   width: 55px;
-  display: flex;
+  display: none;
   flex-direction: column;
   div {
     transition: all 0.4s ease-out;
@@ -99,10 +99,14 @@
   }
 }
 
-.logo {
+.logo, .logoMini{
   margin-right: auto;
   display: flex;
   align-items: center;
+}
+.logoMini{
+  display: none;
+  margin: auto;
 }
 
 .attached {
@@ -131,13 +135,25 @@
 }
 
 @media (max-width: 750px) {
+  .Header{
+    nav{
+      display: none;
+    }
+  }
   .Header,
   .attached {
     background-color: #303535;
     height: 55px;
     padding: 0;
   }
-  .logo{
-    margin: auto
+  .hamburger{
+    display: flex;
   }
+  .logo{
+    display: none;
+  }
+  .logoMini{
+    display: flex;
+  }
+
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import useWidth from '../../hooks/useWidth';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classes from './Header.module.scss';
@@ -25,7 +24,6 @@ const Header = (props) => {
     }
     `)
 
-    const width = useWidth();
     const logo = <Link to="/"><Img draggable={false} fixed={data.logo.childImageSharp.fixed} /></Link>
     const logoMini = <Link to="/"><Img draggable={false} fixed={data.logoMini.childImageSharp.fixed}></Img></Link>
 
@@ -67,8 +65,9 @@ const Header = (props) => {
     return (
         <>
             <div className={headerClasses.join(" ")}>
-                <div className={classes.logo}>{width > 750 ? logo : logoMini}</div>
-                {width > 750 ? <nav>
+                <div className={classes.logo}>{logo}</div>
+                <div className={classes.logoMini}>{logoMini}</div>
+                <nav>
                     <ul>
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to="/proyectos/">Proyectos</Link></li>
@@ -76,9 +75,9 @@ const Header = (props) => {
                         <li><Link to="/servicios/">Servicios</Link></li>
 
                     </ul>
-                </nav> : null}
+                </nav>
             </div>
-            {width < 750 ? <div onClick={props.onToggle} className={hamburgerClasses}><div></div></div> : null}
+            <div onClick={props.onToggle} className={hamburgerClasses}><div></div></div>
         </>
     )
 }
