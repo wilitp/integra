@@ -1,29 +1,30 @@
-import React from 'react';
-import classes from './Estudio.module.scss';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import Aviso from '../Aviso/Aviso';
+import React from "react"
+import classes from "./Estudio.module.scss"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome"
+import {
+  faLinkedinIn,
+  faFacebookF,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
 
 const Estudio = () => {
   const data = useStaticQuery(graphql`
     {
-      foto: file(name: {eq: "arquitecta"}){
-        childImageSharp{
-          fluid{
+      foto: file(name: { eq: "arquitecta" }) {
+        childImageSharp {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-    } 
+    }
   `)
 
   return (
     <div className={classes.Estudio}>
       <div className="container">
-
-        <Aviso>Durante esta cuarentena, ¡Proyecto a mínimo costo!</Aviso>
         <h1>Estudio</h1>
         <div className={classes.Cards}>
           <div className={classes.card}>
@@ -35,23 +36,28 @@ const Estudio = () => {
             </div>
 
             <div className={classes.icons}>
-              <a href="https://www.linkedin.com/in/viviana-tobar-416848124/" target="blank">
+              <a
+                href="https://www.linkedin.com/in/viviana-tobar-416848124/"
+                target="blank"
+              >
                 <Icon icon={faLinkedinIn} size="lg" />
               </a>
-              <a href="https://www.facebook.com/viviana.tobar.35" target="blank">
+              <a
+                href="https://www.facebook.com/viviana.tobar.35"
+                target="blank"
+              >
                 <Icon icon={faFacebookF} size="lg" />
               </a>
-              <a href="https://www.instagram.com/viviliztobar/?hl=es" target="blank">
+              <a
+                href="https://www.instagram.com/viviliztobar/?hl=es"
+                target="blank"
+              >
                 <Icon icon={faInstagram} size="lg" />
               </a>
             </div>
-
           </div>
         </div>
       </div>
-
-
-
     </div>
   )
 }
