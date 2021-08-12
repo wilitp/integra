@@ -2,12 +2,12 @@ import React, { useState } from "react"
 import favicon from "../../static/assets/favicon.ico"
 import Header from "../Header/Header"
 import "../../global.scss"
-import classes from "./Layout.module.scss"
+import * as classes from "./Layout.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from "../Footer/Footer"
 import MobileDrawer from "../MobileMenu/MobileMenu"
 import { Helmet } from "react-helmet"
-const Layout = props => {
+const Layout = (props) => {
   const {
     file: {
       childImageSharp: {

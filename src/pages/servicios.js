@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import classes from '../static/styles/servicios.module.scss';
+import * as classes from '../static/styles/servicios.module.scss';
 import Aviso from '../components/Aviso/Aviso';
 const estudio = () => {
   return (

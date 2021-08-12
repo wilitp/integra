@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Servicio.module.scss';
+import * as classes from './Servicio.module.scss';
 
 const Servicio = (props) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Servicios.module.scss';
+import * as classes from './Servicios.module.scss';
 import Servicio from './Servicio/Servicio';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';

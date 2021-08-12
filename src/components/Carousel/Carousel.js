@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classes from './Carousel.module.scss';
+import * as classes from './Carousel.module.scss';
 import useWidth from '../../hooks/useWidth';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

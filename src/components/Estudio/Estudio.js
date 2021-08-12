@@ -1,5 +1,5 @@
 import React from "react"
-import classes from "./Estudio.module.scss"
+import * as classes from "./Estudio.module.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome"
