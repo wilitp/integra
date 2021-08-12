@@ -62,7 +62,6 @@ const Layout = props => {
         <link rel="icon" href={favicon} />
         <title>{props.title}</title>
         <link rel="canonical" href={props.url} />
-        />
       </Helmet>
       <div style={{ background: "#333" }}>
         {drawer ? <MobileDrawer onHide={hideDrawerHandler} /> : null}
