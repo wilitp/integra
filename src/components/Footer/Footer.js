@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './Footer.module.scss';
+import * as classes from './Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';

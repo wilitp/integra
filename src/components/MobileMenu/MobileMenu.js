@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import classes from './MobileDrawer.module.scss';
+import * as classes from './MobileDrawer.module.scss';
 
 const MobileDrawer= (props) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './HeroBox.module.scss';
+import * as classes from './HeroBox.module.scss';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../Button/Button';
 import { useStaticQuery, graphql } from 'gatsby';

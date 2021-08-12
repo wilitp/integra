@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './Thumbnail.module.scss';
+import * as classes from './Thumbnail.module.scss';
 import Img from 'gatsby-image';
 const Obra = (props) => {
     return (

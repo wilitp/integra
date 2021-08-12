@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Button.module.scss';
+import * as classes from './Button.module.scss';
 import { Link } from 'gatsby';
 const Button = (props) => {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Proyectos.module.scss';
+import * as classes from './Proyectos.module.scss';
 import { useStaticQuery, graphql } from 'gatsby';
 import Masonry from 'react-masonry-css';
 import Thumbnail from '../Thumbnail/Thumbnail';
