@@ -65,7 +65,7 @@ const Obra = (props) => {
   };
 
   return (
-    <Layout notIndex>
+    <Layout title={`${props.data.obra.titulo} | Estudio Integra`} notIndex>
       <React.Fragment>
         <div className="container">
           <Link

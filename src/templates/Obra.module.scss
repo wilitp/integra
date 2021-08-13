@@ -16,9 +16,15 @@
   right: 0;
   bottom: 0;
   background-color: rgba($color: #000000, $alpha: 0.8);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 500px) {
+  .Carousel {
+    display: flex;
+  }
 }
 
 @media (min-width: 750px) {

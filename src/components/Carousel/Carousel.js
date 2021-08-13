@@ -17,7 +17,7 @@ const Carousel = (props) => {
   } else if (width < 900 && width > 500) {
     photosHeight = 50;
   } else if (width < 500) {
-    photosHeight = 50;
+    photosHeight = 35;
   }
 
   const { index } = props;
