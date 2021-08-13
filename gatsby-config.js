@@ -4,6 +4,7 @@ module.exports = {
     description: `Sitio del estudio de arquitectura Integra. Un estudio que provee un servicio flexible e integral. Ofreciendo una solución completa desde el proyecto hasta la ejecución de obra.`,
   },
   plugins: [
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-source-contentful",
       options: {
